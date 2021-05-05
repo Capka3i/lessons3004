@@ -7,6 +7,7 @@ import {
 	Route,
 	Link
 } from 'react-router-dom';
+import Users1 from './components/createElement/Users0';
 
 
 function App() {
@@ -16,8 +17,11 @@ function App() {
 				<Link to={'/user'}>Users</Link>
 				<br/>
 				<Link to={'/posts'}>posts</Link>
+				<br/>
+				<Link to={'/user0'}>users0</Link>
 				<Switch>
 					<Route path={'/user'} render={() => (<Users/>)}/>
+					<Route path={'/user0'} render={() => (<Users1/>)}/>
 					<Route path={'/posts'} render={() => (<Posts/>)}/>
 				</Switch>
 			</Router>
